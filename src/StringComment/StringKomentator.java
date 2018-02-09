@@ -39,6 +39,14 @@ public class StringKomentator {
 	
 	public static void karakteriNaNeparnimPozicijama(String s) {
 		
+		System.out.print("\nKarakteri na neparnim pozicijama su : ");
+
+		for (int i = 0; i < s.length(); i++) {
+
+			if ((i + 1) % 2 != 0) {
+				System.out.print(s.charAt(i) + " ");
+			}
+		}
 	}
 	
 	public static void brojUpercaseKaraktera(String s) {
