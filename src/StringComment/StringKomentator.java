@@ -51,6 +51,15 @@ public class StringKomentator {
 	
 	public static void brojUpercaseKaraktera(String s) {
 		
+		
+		int counter = 0;
+		for (int i = 0; i < s.length(); i++) {
+
+			if (Character.isUpperCase(s.charAt(i))) {
+				counter++;
+			}
+		}
+		System.out.print("\nBroj uppercase karaktera je: " + counter);
 	}
 	
 	public static void brojLowrcaseKaraktera(String s) {
